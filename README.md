@@ -1,18 +1,53 @@
-# AjioClone
-IDE used - Android Studio
+# Ajio Clone using Flutter and Firebase
 
-Download flutter SDK from https://flutter.dev/development?gad_source=1&gclid=CjwKCAiA_tuuBhAUEiwAvxkgTg4-0uM-hioK-ZF63TEXFXvUHhGfXmM2eZYT5cqrTxVWsD7TZ4yNrxoCXmoQAvD_BwE&gclsrc=aw.ds
+This is a clone of the Ajio app built using Flutter framework with Firebase integration for storage and authentication.
 
-- CLone the repository
-- In terminal run $flutter pub get
-- To run the app $flutter run
-- For Firebase Connection:
-    1. Go to the Firebase console: https://console.firebase.google.com/
-    2. Create Android app
-    3. Check $firebase login in cmd if firebase is not found Install Flutter CLI if yes then skip step 4
-    4. Follow firebase documentation: https://firebase.google.com/docs/flutter/setup?platform=ios 
-    5. Run $firebase projects:list select project you want configure
-    6. Then run $firebase configure
-    7. This will create firebase_options.dart in lib
-    8. Now you are done with firebase connection
+## Requirements
+
+- Flutter SDK
+- Firebase Account (for storage and authentication)
+- IDE (e.g., Visual Studio Code, Android Studio)
+
+## IDE Setup
+
+1. **Flutter SDK Installation**: 
+    - Follow the official Flutter installation guide: [Flutter - Get Started](https://flutter.dev/docs/get-started/install)
+
+2. **Firebase Configuration**:
+    - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/)
+    - Enable Firebase Authentication and Firestore database for the project
+    - Download `google-services.json` file for Android or `GoogleService-Info.plist` for iOS and add it to your project under the `android/app` or `ios/Runner` directory respectively.
+    - Follow the instructions provided by Firebase to set up Firebase Authentication (e.g., email/password authentication) and Firestore.
+
+3. **IDE Setup**:
+    - Install the necessary plugins for Flutter and Dart in your IDE.
+    - For Visual Studio Code, you can install the Flutter and Dart plugins directly from the marketplace.
+
+## Steps to Run the Project
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/ajio-clone.git
+    ```
+
+2. **Navigate to Project Directory**:
+    ```bash
+    cd ajio-clone
+    ```
+
+3. **Install Dependencies**:
+    ```bash
+    flutter pub get
+    ```
+
+4. **Run the App**:
+    - Connect your device/emulator and run the app using the following command:
+    ```bash
+    flutter run
+    ```
+
+5. **Testing Authentication and Storage**:
+    - Make sure your Firebase configurations are correctly set up for authentication and storage.
+    - Test authentication features such as sign-in, sign-up, password reset, etc.
+    - Test file uploads/downloads using Firebase storage.
 
